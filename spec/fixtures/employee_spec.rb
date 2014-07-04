@@ -8,17 +8,6 @@ describe Employee do
   let!(:employee){Employee.new}
 
   describe "Class methods" do
-    it "can be initialized" do
-      expect(employee).to be_an_instance_of(Employee)
-    end
-
-    it "can be payed" do
-      expect(employee.pay).to eq("Wooohooooo!")
-    end
-  end
-
-
-  describe "Class methods" do
     it "keeps track of the employees that have been created" do
       expect(Employee.all).to include(employee)
     end
@@ -32,4 +21,15 @@ describe Employee do
       expect(Employee.count).to eq(0)
     end
   end
+
+  describe "Instance methods" do
+    it "can be initialized" do
+      expect(employee).to be_an_instance_of(Employee)
+    end
+
+    it "can be payed" do
+      expect(employee.pay).to eq("Wooohooooo!")
+    end
+  end
+
 end

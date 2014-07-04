@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-07-04T12:19:57-04:00">2014-07-04T12:19:57-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-07-04T12:21:22-04:00">2014-07-04T12:21:22-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -727,13 +727,13 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can be initialized&quot; do</code>
+          <code class="ruby">    it &quot;keeps track of the employees that have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(employee).to be_an_instance_of(Employee)</code>
+          <code class="ruby">      expect(Employee.all).to include(employee)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -751,13 +751,13 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can be payed&quot; do</code>
+          <code class="ruby">    it &quot;can count how many employees have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(employee.pay).to eq(&quot;Wooohooooo!&quot;)</code>
+          <code class="ruby">      expect(Employee.count).to eq(1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -769,61 +769,61 @@
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
+          <code class="ruby">    it &quot;can reset the employees that have been created&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">      Employee.reset_all</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;Class methods&quot; do</code>
+          <code class="ruby">      expect(Employee.count).to eq(0)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;keeps track of the employees that have been created&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(Employee.all).to include(employee)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;Instance methods&quot; do</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can count how many employees have been created&quot; do</code>
+          <code class="ruby">    it &quot;can be initialized&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(Employee.count).to eq(1)</code>
+          <code class="ruby">      expect(employee).to be_an_instance_of(Employee)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -841,31 +841,31 @@
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can reset the employees that have been created&quot; do</code>
+          <code class="ruby">    it &quot;can be payed&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">      Employee.reset_all</code>
+          <code class="ruby">      expect(employee.pay).to eq(&quot;Wooohooooo!&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(Employee.count).to eq(0)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
