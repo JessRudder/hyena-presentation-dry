@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-07-04T12:10:35-04:00">2014-07-04T12:10:35-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-07-04T12:19:57-04:00">2014-07-04T12:19:57-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -123,7 +123,7 @@
       <tr>
         <td class="strong"><a href="#209ae8a7ee4b0b43179180559244eb6d1429bba1" class="src_link" title="spec/fixtures/vehicle_spec.rb">spec/fixtures/vehicle_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>34</td>
+        <td>35</td>
         <td>18</td>
         <td>18</td>
         <td>0</td>
@@ -955,7 +955,7 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;keeps track of the employees that have been created&quot; do</code>
+          <code class="ruby">    it &quot;keeps track of the hyenas that have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
@@ -979,7 +979,7 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can count how many employees have been created&quot; do</code>
+          <code class="ruby">    it &quot;can count how many hyenas have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
@@ -1003,7 +1003,7 @@
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can reset the employees that have been created&quot; do</code>
+          <code class="ruby">    it &quot;can reset the hyenas that have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
@@ -1207,13 +1207,13 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can be initialized&quot; do</code>
+          <code class="ruby">    it &quot;keeps track of the vehicles that have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(vehicle).to be_an_instance_of(Vehicle)</code>
+          <code class="ruby">      expect(Vehicle.all).to include(vehicle)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -1231,13 +1231,13 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can be fueled up&quot; do</code>
+          <code class="ruby">    it &quot;can count how many vehicles have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(vehicle.fuel).to eq(&quot;Vrooooooooom!&quot;)</code>
+          <code class="ruby">      expect(Vehicle.count).to eq(1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -1249,37 +1249,37 @@
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    it &quot;can reset the vehicles that have been created&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;Class methods&quot; do</code>
+          <code class="ruby">      Vehicle.reset_all</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;keeps track of the employees that have been created&quot; do</code>
+          <code class="ruby">      expect(Vehicle.count).to eq(0)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="22">
           
-          <code class="ruby">      expect(Vehicle.all).to include(vehicle)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -1291,43 +1291,43 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;can count how many employees have been created&quot; do</code>
+          <code class="ruby">  describe &quot;Instance methods&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(Vehicle.count).to eq(1)</code>
+          <code class="ruby">    it &quot;can be initialized&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect(vehicle).to be_an_instance_of(Vehicle)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="29">
           
-          <code class="ruby">    it &quot;can reset the employees that have been created&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">      Vehicle.reset_all</code>
+          <code class="ruby">    it &quot;can be fueled up&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(Vehicle.count).to eq(0)</code>
+          <code class="ruby">      expect(vehicle.fuel).to eq(&quot;Vrooooooooom!&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -1343,6 +1343,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>

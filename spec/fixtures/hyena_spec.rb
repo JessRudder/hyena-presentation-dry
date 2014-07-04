@@ -8,15 +8,15 @@ describe Hyena do
   let!(:hyena){Hyena.new}
 
   describe "Class methods" do
-    it "keeps track of the employees that have been created" do
+    it "keeps track of the hyenas that have been created" do
       expect(Hyena.all).to include(hyena)
     end
 
-    it "can count how many employees have been created" do
+    it "can count how many hyenas have been created" do
       expect(Hyena.count).to eq(1)
     end
 
-    it "can reset the employees that have been created" do
+    it "can reset the hyenas that have been created" do
       Hyena.reset_all
       expect(Hyena.count).to eq(0)
     end
